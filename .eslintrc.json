@@ -1,0 +1,32 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "semi": "error",
+        "for-direction": "error",
+        "no-dupe-args": "error",
+        "no-empty": "warn",
+        "no-duplicate-case": "error",
+        "no-extra-semi": "error",
+        "no-sparse-arrays": "error",
+        "no-unreachable": "error",
+        "use-isnan": "error",
+        "valid-typeof": "warn",
+        "eqeqeq": "error",
+        "no-floating-decimal": "error",
+        "prefer-const": "error"
+    }
+}
