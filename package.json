@@ -22,6 +22,7 @@
   "homepage": "https://github.com/whamer100/boredgaming-discord-bot#readme",
   "dependencies": {
     "@discordjs/rest": "^0.3.0",
+    "@sapphire/decorators": "^4.2.2",
     "@sapphire/framework": "^2.4.0",
     "@types/node": "^17.0.15",
     "@types/ramda": "^0.27.64",

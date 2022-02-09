@@ -1,13 +1,12 @@
-import {handleEvents} from "./events";
-
 require('dotenv').config();
 import {CommandStore, SapphireClient} from '@sapphire/framework';
 import {PresenceData, ActivitiesOptions, MessageMentionTypes} from "discord.js";
+import {handleEvents} from "./events";
 import "./startup";
 
 const prefix = process.env.PREFIX!;
 const TOKEN  = process.env.BOT_TOKEN!;
-const owners = process.env.OWNERS!;
+// const owners = process.env.OWNERS!;
 
 const defaultActivity: ActivitiesOptions = {
     name: "board games, probably"

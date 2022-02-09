@@ -1,6 +1,7 @@
 import { Command } from '@sapphire/framework';
 import { Message } from "discord.js";
 
+
 export class TestCommand extends Command {
     constructor(context: Command.Context, options: Command.Options) {
         super(context, {

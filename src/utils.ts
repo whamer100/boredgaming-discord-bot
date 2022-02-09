@@ -1,5 +1,5 @@
 import { Command } from "@sapphire/framework";
-import { GuildMember } from "discord.js";
+import {GuildMember, Message} from "discord.js";
 import { chain, equals } from "ramda";
 
 export const boxContents = (...texts: string[]) => { // borrowed from another bot, thanks xetera o/
@@ -25,8 +25,12 @@ export const formatHelp = (mod: Command) => {
         if (segments.length === 1) return `${process.env.PREFIX}${mod.name}: ${segments[0]}`;
         else return `${process.env.PREFIX}${mod.name} ${segments[0]}: ${segments[1]}`;
     }
-    return `${process.env.PREFIX || "c!"}${mod.name}: ${mod.description}`;
+    return `${process.env.PREFIX}${mod.name}: ${mod.description}`;
 };
+
+
+export const deleteAfter = (m: Promise<Message>, t: number) =>
+    setTimeout(() => {m.then((i) => i.delete());}, t);
 
 export type PromiseOrder<T> = { i: number, v: T; }
 

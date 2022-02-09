@@ -1,0 +1,1 @@
+export const botMainColor: number = 0x67AADF;
